@@ -4,6 +4,10 @@ const counter = ref(0);
 setInterval(function () {
   counter.value++;
 }, 1000);
+
+const resetButton = () => {
+  counter.value = 0;
+};
 </script>
 
 <template>
@@ -11,4 +15,5 @@ setInterval(function () {
     Counter
     {{ counter }}
   </h1>
+  <button @click="resetButton">reset counter</button>
 </template>
