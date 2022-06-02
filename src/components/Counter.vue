@@ -16,4 +16,5 @@ const resetButton = () => {
     {{ counter }}
   </h1>
   <button @click="resetButton">reset counter</button>
+  <input type="number" v-model="counter" />
 </template>
