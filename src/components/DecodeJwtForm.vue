@@ -1,7 +1,9 @@
 <script setup>
 import { ref } from "vue";
 import * as jose from "jose";
-const token = ref("");
+const token = ref(
+  localStorage.getItem("jwtToken") ? "" : localStorage.getItem("jwtToken")
+);
 const result = ref({});
 const decodeToken = () => {
   result.value = jose.decodeJwt(token.value);
