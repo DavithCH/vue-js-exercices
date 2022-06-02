@@ -1,5 +1,7 @@
-<script setup></script>
+<script setup>
+import Counter from "./components/Counter.vue";
+</script>
 
 <template>
-  <h1>hello</h1>
+  <Counter />
 </template>
